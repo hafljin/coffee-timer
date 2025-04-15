@@ -124,23 +124,27 @@ body {
 
 @media (max-width: 480px) {
     .coffee-container-wrapper {
-        width: calc(70vw + 80px); /* 70% of screen width + handle */
-        height: 30vh; /* 30% of screen height */
+        width: calc(90vw + 80px); /* Adjust width for smaller screens */
+        height: 50vh; /* Adjust height for smaller screens */
     }
 
     .coffee-container {
-        width: 70vw; /* 70% of screen width */
-        height: 30vh; /* 30% of screen height */
+        width: 90vw; /* Adjust width for smaller screens */
+        height: 50vh; /* Adjust height for smaller screens */
     }
 
     .buttons-container {
-        flex-direction: column; /* Change buttons to vertical layout */
-        gap: 8px;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
     }
 
     .button {
-        padding: 6px 10px;
-        font-size: 0.8rem;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .timer-display {
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 }
 

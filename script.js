@@ -153,6 +153,12 @@ document.getElementById('start').addEventListener('click', startTimer);
 document.getElementById('stop').addEventListener('click', stopTimer);
 document.getElementById('reset').addEventListener('click', resetTimer);
 
+// Add touch event listeners for buttons
+document.getElementById('start').addEventListener('touchstart', startTimer);
+document.getElementById('stop').addEventListener('touchstart', stopTimer);
+document.getElementById('reset').addEventListener('touchstart', resetTimer);
+document.getElementById('toggle-buttons').addEventListener('touchstart', resetToInitialState);
+
 // Click the small icon to reset to the initial state
 document.getElementById('toggle-buttons').addEventListener('click', () => {
     resetToInitialState();
