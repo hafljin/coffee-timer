@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Title -->
+        <div class="title-container">
+            <h1 class="title">☕ Coffee Timer</h1>
+        </div>
+
+        <!-- Timer selection -->
+        <div class="time-selector-container">
+            <label for="time-select">Select Time:</label>
+            <select id="time-select" class="dropdown">
+                <option value="25">25 Minutes</option>
+                <option value="15">15 Minutes</option>
+                <option value="10">10 Minutes</option>
+                <option value="5">5 Minutes</option>
+            </select>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons-container">
+            <button id="start" class="button">Start</button>
+            <button id="stop" class="button" style="display: none;">Stop</button>
+            <button id="reset" class="button" style="display: none;">Finish</button>
+        </div>
+
+        <!-- Coffee image -->
+        <div class="coffee-container-wrapper">
+            <div class="coffee-handle"></div> <!-- Add handle -->
+            <div class="coffee-container">
+                <div class="coffee-fill" id="coffee"></div>
+                <div id="timer" class="timer-display">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="icon" id="toggle-buttons">
+        <h3>👀</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
